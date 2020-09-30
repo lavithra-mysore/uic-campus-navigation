@@ -36,17 +36,12 @@
 using namespace std;
 using namespace tinyxml2;
 
-
-//////////////////////////////////////////////////////////////////
-//
-// main
-//
-
 class prioritize
 {
    public:
    bool operator()(const pair<long long,double>& p1, const pair<long long,double>& p2) const
-   {// it sorts the pairs in vector
+   {
+       // it sorts the pairs in vector
       if(p1.second>p2.second){// sort from min to max
          return true;
       }
